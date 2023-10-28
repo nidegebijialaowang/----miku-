@@ -6,8 +6,10 @@
 		<script src="./js/tiele-changed.js"></script>
 		<script src="./js/cardcolor-changed.js"></script>
 		<script src="./js/jquery-3.7.1.min.js"></script>
+		<script src="./js/end-changed.js"></script>
 		<link rel="stylesheet" href="./css/bootstrap.css">
-		<link rel="stylesheet" href="./css/font.css">
+		<link rel="stylesheet" href="./css/font.scss">
+		<link rel="stylesheet" href="./css/blur.css">
 		<style type="text/css">
 			.d2{
 				display: flex;
@@ -175,7 +177,7 @@
 				</figure>
 			</div>
 		</div>
-		<div class="d5 titlecolor-changed row" style="height: 400px; width: 100%; display: flex; margin: 0;">
+		<div class="d5 titlecolor-changed row" style="height: 220px; width: 100%; display: flex; margin: 0;">
 			<div class="d4-p col">
 				<figure class="figure">
 				  <img src="./img/miku.jpg" class="figure-img img-fluid rounded" alt="...">
@@ -202,9 +204,33 @@
 				</figure>
 			</div>
 		</div>
-		<div class="d6 titlecolor-changed row" style="height: 800px; width: 100%; margin: 0;">
-			<video src="./video/mikumikuooeeoo..1307801919~1.mp4" style="height: 400px; width: auto;"></video>
+		<div class="d6 titlecolor-changed row" style="height: 1000px; width: 100%; margin: 0; text-align: center;">
+			<div class="bjNoReport"  style="height: auto; width: 33.3%; margin: 0 auto; backdrop-filter: blur(2px);">
+				<video id="vid1" src="./video/mikumikuooeeoo..1307801919~1.mp4" controls="true" muted="true" loop="true" style="height: 860px; width: auto;"></video>
+			</div>
+			<div style="height: auto; width: 33.3%; margin: 0 auto;">
+				<video id="vid2" src="./video/mikumikuooeeoo..1307801919~1.mp4" controls="true"  loop="true" style="height: 860px; width: auto;"></video>
+			</div>
+			<div  class="bjNoReport" style="height: auto; width: 33.3%; margin: 0 auto;">
+				<video id="vid3" src="./video/mikumikuooeeoo..1307801919~1.mp4" controls="true"  muted="true" loop="true" style="height: 860px; width: auto;"></video>
+			</div>
+			<div style="height: 35px; width: 200px; margin: 0 auto;">
+			<button type="button" class="btn btn-secondary" onclick="ztbtn()">暂停</button>
+			<button type="button" class="btn  btn-primary" onclick="bfbtn()">播放</button>
+			</div>
+			
+		</div>
+		<div class="d7 end-changed" style="height: 500px; width: 100%; display: flex;">
+			<div class="d7-1" style="height: 100%; width: 50%;">
+				<div class="d7-1-1" style="height: 50%; width: 100%;"><p style="font-family: Sunshine ; font-size: 75px; margin-left: 30px;">Guard the best Royal Highness Princess!</p></div>
+				<div class="d7-1-2" style="height: 50%; width: 100%; text-align: center;"><img src="./img/miku头像.png" alt="" style="height: 250px; "></div>
+			</div>
+			<div class="d7-2" style="height: 100%; width: 50%;">
+				<div class="d7-2-1" style="height: 50%; width: 100%;"><p style="font-family: kaishu ; font-size: 75px;">相关链接</p></div>
+				<div class="d7-2-2" style="height: 50%; width: 100%;"></div>
+			</div>
 		</div>
 		<script src="./js/bootstrap.bundle.js"></script>
+		<script src="./js/videoct.js"></script>
 	</body>
 </html>
