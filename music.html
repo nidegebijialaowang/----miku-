@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicPlayer</title>
+    <link rel="stylesheet" href="./css/music.css">
+    <script src="./js/end-changed.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font.scss">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/tiele-changed.js"></script>
+    <script src="./js/cardcolor-changed.js"></script>
+</head>
+ 
+<body>
+    <div class="d1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0; border-style: none none solid; border-width: thin;">
+          <div class="container-fluid titlecolor-changed">
+            <a class="navbar-brand" href="#" style="font-family:Rough Battle;font-size: 40px;color: #39C5BB; ">MIKU MIKU Fans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">主页</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="color: black;">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <div class="page ">
+        <div class="header cardcolor-changed" style="width: 100%;">歌曲列表</div>
+        <div class="player cardcolor-changed">
+            <div class="left-img">
+                <img src="./img/miku头像.png" alt="">
+            </div>
+            <div class="right-title">
+                <p class="right-title-name">试听专辑</p>
+                <p class="right-title-band">初音未来/miku</p>
+            </div>
+        </div>
+        <div class="musiclist cardcolor-changed"  style="overflow: hidden;height: 600px; width: 100%;">
+            <div class="playlist">
+                <div class="playlist-left">Playlist</div>
+                <div class="playlist-right"></div>
+ 
+            </div>
+            <div class="songlist">
+                <ul>
+                    <li class="song song1">
+                        <div class="num">
+                            <p>1</p>
+                        </div>
+                        <div class="song-right">
+                            <div class="song-songname" style="font-size:1.7rem;">千本桜
+                            </div>
+                            <div class="song-songsinger">初音未来</div>
+                            
+                        </div>
+                        <div class="dot">...</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="bottom cardcolor-changed" style="width: 98%;">
+            
+                <div style="padding-left: 20px; padding-bottom: 20px;" >
+                    <img style="height: 100%;" src="./img/miku头像.png" alt="">
+                </div>
+                <div class="bottom-middle">
+                    <span class="name">Name:千本桜&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="singer">Singer: 初音未来&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <audio id="audio" style="width: 900px;" src="./music/【4K超高清】千本桜原版MV__feat_初音ミク..395437261.aac" controls></audio>
+                </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+ 
+</html>
