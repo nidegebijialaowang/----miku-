@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/cardcolor-changed.js"></script>
+    <script src="./js/tiele-changed.js"></script>
+    <style type="text/css">
+            
+        .card1 {
+        margin-left: 100px;
+        position: relative;
+        
+        width: 500px;
+        height: 300px;
+        
+        background: lightgrey;
+        
+        box-shadow: #d11bff42 0 15px 40px -5px;
+        
+        z-index: 1;
+        
+        border-radius: 21px;
+        
+        overflow: hidden;
+        }
+        .card2 {
+        margin-right: 100px;
+        position: relative;
+        
+        width: 500px;
+        height: 300px;
+        
+        background: lightgrey;
+        
+        box-shadow: #d11bff42 0 15px 40px -5px;
+        
+        z-index: 1;
+        
+        border-radius: 21px;
+        
+        overflow: hidden;
+        }
+        .card__content1 {
+       
+        background: linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25));
+        
+        z-index: 1;
+       
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 21px;
+        }
+        
+        .card1 .blob1 {
+        /* 设置卡片形状的位置 */
+        position: absolute;
+        /* 设置卡片形状的层级，使其显示在页面上的下层 */
+        z-index: -1;
+        /* 设置卡片形状的圆角半径 */
+        border-radius: 5em;
+        /* 设置卡片形状的宽和高 */
+        width: 400px;
+        height: 400px;
+        }
+        
+        .card1 .blob1:nth-child(2) {
+        /* 设置第二个卡片形状的位置 */
+        left: 120px;
+        top: -90px;
+        /* 设置第二个卡片形状的背景颜色 */
+        background: #ff930f;
+        }
+        
+        .card1 .blob1:nth-child(3) {
+        /* 设置第三个卡片形状的位置 */
+        left: -170px;
+        top: 120px;
+        /* 设置第三个卡片形状的层级，使其显示在页面上的下层 */
+        z-index: 0;
+        /* 设置第三个卡片形状的背景颜色 */
+        background: #bf0fff;
+        }
+        
+        .card1 .blob1:nth-child(4) {
+        /* 设置第四个卡片形状的位置 */
+        left: -40px;
+        top: 0px;
+        /* 设置第四个卡片形状的背景颜色 */
+        background: #ff1b6b;
+        }
+        
+        .card1 .blob1:nth-child(5) {
+        /* 设置第五个卡片形状*/
+        left: 150px;
+        top: 180px;
+        /* 设置第五个卡片形状的背景颜色 */
+        background: #0061ff;
+        }
+   </style>
+</head>
+<body>
+    <div class="d1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0; border-style: none none solid; border-width: thin;">
+          <div class="container-fluid titlecolor-changed">
+            <a class="navbar-brand" href="#" style="font-family:Rough Battle;font-size: 40px;color: #39C5BB; ">MIKU MIKU Fans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">主页</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="color: black;">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <div class="d2 cardcolor-changed" style="height: 1200px; width: 100%;">
+        <div class="d2-1" style="height: 600px;width: 100%;">
+            <p style="font-size: 120px; text-align: center; color: #12a299;padding-bottom: 70px;">演唱会信息</p>
+            <p style="font-size: 50px; text-align: center; color: #12a299;">中国大陆方面</p>
+        </div>
+        <div class="d2-2" style="height: 600px;width: 100%;">
+            <div class="d2-2-1" style="float: left; width: 50%; height: 100%;">
+            <div class="card1">
+                <div style="float: left; width: 70%; height: 100%; z-index: 3; position: relative;"></div>
+                <div style="float: left; width: 30%; height: 100%; z-index: 3; position: relative;"></div>
+                <div class="card__content1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                </div>
+            </div>
+            <div class="d2-2-2" style="float: right; width: 50%; height: 100%;">
+                <div class="card1">
+                    <div class="card__content1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="d3 cardcolor-changed" style="height: 600px;width: 100%;">
+        <div class="d3-1-1" style="float: left; width: 50%; height: 100%;">
+            <div class="card1">
+                <div class="card__content1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                <div class="blob1"></div>
+                </div>
+            </div>
+            <div class="d3-1-2" style="float: right; width: 50%; height: 100%;">
+                <div class="card1">
+                    <div class="card__content1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    <div class="blob1"></div>
+                    </div>
+            </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
