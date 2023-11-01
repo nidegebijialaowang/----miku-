@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/cardcolor-changed.js"></script>
+    <script src="./js/end-changed.js"></script>
     <script src="./js/tiele-changed.js"></script>
     <style type="text/css">
             
         .card1 {
-        margin-left: 100px;
+        margin: 0 auto;
         position: relative;
         
         width: 500px;
@@ -27,23 +28,7 @@
         
         overflow: hidden;
         }
-        .card2 {
-        margin-right: 100px;
-        position: relative;
         
-        width: 500px;
-        height: 300px;
-        
-        background: lightgrey;
-        
-        box-shadow: #d11bff42 0 15px 40px -5px;
-        
-        z-index: 1;
-        
-        border-radius: 21px;
-        
-        overflow: hidden;
-        }
         .card__content1 {
        
         background: linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25));
@@ -64,48 +49,48 @@
         }
         
         .card1 .blob1 {
-        /* 设置卡片形状的位置 */
+        
         position: absolute;
-        /* 设置卡片形状的层级，使其显示在页面上的下层 */
+        
         z-index: -1;
-        /* 设置卡片形状的圆角半径 */
+        
         border-radius: 5em;
-        /* 设置卡片形状的宽和高 */
+        
         width: 400px;
         height: 400px;
         }
         
         .card1 .blob1:nth-child(2) {
-        /* 设置第二个卡片形状的位置 */
+        
         left: 120px;
         top: -90px;
-        /* 设置第二个卡片形状的背景颜色 */
+        
         background: #ff930f;
         }
         
         .card1 .blob1:nth-child(3) {
-        /* 设置第三个卡片形状的位置 */
+        
         left: -170px;
         top: 120px;
-        /* 设置第三个卡片形状的层级，使其显示在页面上的下层 */
+        
         z-index: 0;
-        /* 设置第三个卡片形状的背景颜色 */
+        
         background: #bf0fff;
         }
         
         .card1 .blob1:nth-child(4) {
-        /* 设置第四个卡片形状的位置 */
+        
         left: -40px;
         top: 0px;
-        /* 设置第四个卡片形状的背景颜色 */
+       
         background: #ff1b6b;
         }
         
         .card1 .blob1:nth-child(5) {
-        /* 设置第五个卡片形状*/
+        
         left: 150px;
         top: 180px;
-        /* 设置第五个卡片形状的背景颜色 */
+        
         background: #0061ff;
         }
    </style>
@@ -151,19 +136,32 @@
     </div>
     <div class="d2 cardcolor-changed" style="height: 1200px; width: 100%;">
         <div class="d2-1" style="height: 600px;width: 100%;">
-            <p style="font-size: 120px; text-align: center; color: #12a299;padding-bottom: 70px;">演唱会信息</p>
-            <p style="font-size: 50px; text-align: center; color: #12a299;">中国大陆方面</p>
+          <div style="margin: 0 auto ;height: 100%;width: 75%;">
+            <img src="./img/演唱会标题.png" style="height: 100%;" alt="">
+          </div>
         </div>
-        <div class="d2-2" style="height: 600px;width: 100%;">
+        <div class="d2-2" style="height: 500px;width: 100%;">
             <div class="d2-2-1" style="float: left; width: 50%; height: 100%;">
-            <div class="card1">
-                <div style="float: left; width: 70%; height: 100%; z-index: 3; position: relative;"></div>
-                <div style="float: left; width: 30%; height: 100%; z-index: 3; position: relative;"></div>
+            <div class="card1" >
+               
                 <div class="card__content1"></div>
                 <div class="blob1"></div>
                 <div class="blob1"></div>
                 <div class="blob1"></div>
                 <div class="blob1"></div>
+                <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                  <a href="https://www.bilibili.com/video/BV1724y177kw/?share_source=copy_web&vd_source=45ee3c00e07c81e71740adefa8bf237b">
+                  <img src="./img/miku演唱会 (1).webp" style="height: 260px; border-radius: 10px;" alt="">
+                  </a>
+                </div>
+                <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto">
+                  <p>《未来有你·初音未来 2017 上海演唱会》（英文名：Hatsune Miku with YOU 2017 China Festival，日文名：未来（ミク）には君がいる·初音ミク２０１７上海ライブ）是由上海新创华文化发展有限公司（英文名：SCLA，初音未来中国大陆版权总代理）主办，Crypton Future Media授权、制作内容的初音未来3DCG演唱会系列2017年场次。
+
+                    主题为“热情”。
+                    
+                    该演唱会于2017年11月25日在上海新国际博览中心E5馆举行。
+                    </p>
+                </div>
                 </div>
             </div>
             <div class="d2-2-2" style="float: right; width: 50%; height: 100%;">
@@ -173,6 +171,28 @@
                     <div class="blob1"></div>
                     <div class="blob1"></div>
                     <div class="blob1"></div>
+                    <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                      <a href="https://www.bilibili.com/video/BV1it411d7AC/?share_source=copy_web&vd_source=45ee3c00e07c81e71740adefa8bf237b">
+                      <img src="./img/miku演唱会 (2).webp" style="height: 260px; border-radius: 10px;" alt="">
+                      </a>
+                    </div>
+                    <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto">
+                      <p>《未来有你·初音未来 2018 中国巡回演唱会》（日文名：MIKU WITH YOU 2018 中国ツアー，英文名：Miku With You 2018 China Tour）是由上海新创华文化发展有限公司（英文名：SCLA，初音未来中国大陆版权总代理，上海站主办）、凤凰卫视文化演艺（上海）有限公司（北京站、成都站主办）联合举办，Crypton Future Media授权并制作内容的初音未来3DCG演唱会。
+
+                        主题为“星际旅行”。
+                        
+                        该演唱会于2018年10月举办。
+                        
+                        Poppro承载本次演唱会的“歌曲征集”任务，歌曲征稿优胜者为敌门创作的《Pick Me Up》[1]。
+                        
+                        本次演唱会邀请到DECO*27&八王子P（北京场）、kz(livetune)（上海场）、Crypton Future Media株式会社社长伊藤博之作为展示会嘉宾。其中，kz(livetune)还在上海场展示会进行DJ表演。
+                        
+                        本次演唱会上海站邀请到Saya Scarlet（俄罗斯初音未来coser）及kz(livetune)进行签名活动。
+                        
+                        本次演唱会公布并在展示会会场赠送本次演唱会官方实体专辑《未来之旅》。
+                        
+                        </p>
+                    </div>
                     </div>
             </div>
         </div>
@@ -186,6 +206,22 @@
                 <div class="blob1"></div>
                 <div class="blob1"></div>
                 <div class="blob1"></div>
+                <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                  <a href="https://www.bilibili.com/video/BV1WW411Q7sW/?share_source=copy_web&vd_source=45ee3c00e07c81e71740adefa8bf237b">
+                  <img src="./img/miku演唱会(3).webp" style="height: 260px; border-radius: 10px;" alt="">
+                  </a>
+                </div>
+                <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto;">
+                  <p>《初音未来2016中国演唱会北京站》（英文：MIKU EXPO 2016 China Tour in Beijing），是由大景文化（北京）有限公司（及其子公司北京查莱伍娱乐有限公司）主办的、由上海新创华文化发展有限公司授权、Crypton Future Media制作内容的初音未来3DCG演唱会，于2016年12月10日-11日间在北京展览馆剧场举办。是继2015年《初音未来2015上海演唱会》后，初音未来第二次在中国大陆的演唱会，继2015年交响曲《理想之乡》之后初音未来在北京地区的第二场演出。
+
+                    演出将由日本的伊东贤佑（Kensuke Ito）、金野伦仁、中岛康孝以及韩国的徐慧（MEG.ME）四人团体担任[1]。
+                    
+                    官方公布的送审歌单，部分非常用翻译，甚至有错翻，成为一时热话，如《気まぐれメルシィ》（反复无常的宽赦）的mercy直接音译，歌名翻译为《任性梅尔西》。
+                    
+                    这次演唱会也是最后一次以“MIKU EXPO”名义在中国大陆举办的演唱会。从2017年开始，新的系列“未来有你”取代了“MIKU EXPO”。
+                    
+                    </p>
+                </div>
                 </div>
             </div>
             <div class="d3-1-2" style="float: right; width: 50%; height: 100%;">
@@ -195,9 +231,108 @@
                     <div class="blob1"></div>
                     <div class="blob1"></div>
                     <div class="blob1"></div>
+                    <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                      <a href="https://www.bilibili.com/bangumi/play/ep292276/?share_source=copy_web">
+                      <img src="./img/miku演唱会 (4).webp" style="height: 260px; border-radius: 10px;" alt="">
+                      </a>
+                    </div>
+                    <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto">
+                      <p>《未来有你·初音未来 2019 中国巡回演唱会》（英文名：HATSUNE MIKU WITH YOU 2019）是由上海新创华文化发展有限公司（英文名：SCLA，初音未来中国大陆版权总代理）的合作方，天津中视文化传播有限公司（中视宝星）举办，爱奇艺联合举办，Crypton Future Media授权、制作内容的初音未来3DCG演唱会。
+
+                        主题为“舞动的精灵”。
+                        
+                        该演唱会于2019年11月举办。
+                        
+                        Poppro承载本次演唱会的“歌曲征集”任务，歌曲征稿优胜作品为米库喵创作的《COME BACK~重返巅峰~》[1]。
+                        
+                        本次系列演出只有上海场举办大型展示会。展出内容包括等身大未来有你2019初音未来等身大立像、MEIKO 15th Anniversary纪念区和巡音流歌 10th Anniversary纪念区等。
+                        
+                        上海展示会特邀DJ嘉宾为小野道、DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ及sasakure.UK。
+                        
+                        </p>
+                    </div>
                     </div>
             </div>
     </div>
+    <div class="d3 cardcolor-changed" style="height: 500px;width: 100%;">
+      <div class="d3-1-1" style="float: left; width: 50%; height: 100%;">
+          <div class="card1">
+              <div class="card__content1"></div>
+              <div class="blob1"></div>
+              <div class="blob1"></div>
+              <div class="blob1"></div>
+              <div class="blob1"></div>
+              <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                <a href="https://www.bilibili.com/bangumi/play/ep367623/?share_source=copy_web">
+                <img src="./img/miku演唱会 (5).webp" style="height: 260px; border-radius: 10px;" alt="">
+                </a>
+              </div>
+              <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto">
+                <p>《未来有你·初音未来 2020 特别感谢LIVE》（海外名称：MIKU WITH YOU 2020特別感謝LIVE）是由上海新创华文化发展有限公司（英文名：SCLA，初音未来中国大陆版权总代理）主办、监制，Crypton Future Media授权、制作内容，并在日本Terminal STUDIO进行演出的初音未来3DCG演唱会。
+
+                  主题为“欢乐假日”。
+                  
+                  该演唱会已于2020年12月25日举行。由于新冠病毒疫情反复，中国暂时还无法举办大型演唱会，本次演唱会以线上形式播出。
+                  
+                  Poppro承载本次演唱会的“歌曲征集”任务，歌曲征稿优胜作品是MACHWOLF创作的《踏步、出发》。
+                  
+                  由于疫情，观众不能实地来到现场观演，本次演出创新地采用了全程AR表现的设计，背景是现实中的乐手与演出工作室，在由非常壮观的AR场景和灯光组成的虚拟舞台上，各角色以AR的形式进行3DCG演出，结合诸多特效，进行了新形式的表演。
+                  
+                  是Crypton在主要演唱会系列中首次使用全AR技术进行的演出。
+                  
+                  </p>
+              </div>
+              </div>
+          </div>
+          <div class="d3-1-2" style="float: right; width: 50%; height: 100%;">
+              <div class="card1">
+                  <div class="card__content1"></div>
+                  <div class="blob1"></div>
+                  <div class="blob1"></div>
+                  <div class="blob1"></div>
+                  <div class="blob1"></div>
+                  <div style="float: left; width: 45%; height: 100%; z-index: 3; position: relative; padding: 20px;">
+                    <a href="https://www.bilibili.com/bangumi/play/ep446719/?share_source=copy_web">
+                    <img src="./img/miku演唱会 (6).webp" style="height: 260px; border-radius: 10px;" alt="">
+                    </a>
+                  </div>
+                  <div style="float: right; width: 55%; height: 100%; z-index: 3; position: relative;padding: 20px; overflow: auto">
+                    <p>《未来有你·初音未来 2021 演唱会》（海外名称：MIKU WITH YOU 2021）是由上海新创华文化发展有限公司（英文名：SCLA，初音未来中国大陆版权总代理）主办、监制，Crypton Future Media授权、制作内容的初音未来3DCG演唱会。演出于日本HENEDA xR STUDIO录制。
+
+                      主题为“未来花道”。
+                      
+                      该演唱会于2021年12月25日举行。由于新冠病毒疫情反复，中国暂时还无法举办大型演唱会，本次演唱会以线上形式播出。同时主办方在上海市静安区万荣路1053号静安新业坊+0剧场举办了线下同步观影会[1]并举行了舞台活动。舞台活动分为DJ表演和特邀插画作者表演两部分，其中特邀DJ表演嘉宾为小野道和DJ_Kabuto，特邀插画作者表演嘉宾为枫叶和织布机loom。
+                      
+                      本次演出与上届未来有你演出一样，仍然使用flapper3, inc.的AR技术和AR动画制作，为线上观演的观众也提供了沉浸的增强现实视觉体验。
+                      
+                      Poppro承载本次演唱会的“歌曲征集”任务，歌曲征稿优胜作品是cannibaltim创作的《My stage with you》。
+                      
+                      本次演出也是在中国大陆初音未来演唱会上，首次使用以中国本土画师Liita的设定制作的世嘉初音未来模型并进行征稿活动优胜曲的演出。
+                      
+                      </p>
+                  </div>
+                  </div>
+          </div>
+  </div>
+  <div class="d7 end-changed" style="height: 500px; width: 100%; display: flex;">
+    <div class="d7-1" style="height: 100%; width: 50%;">
+      <div class="d7-1-1" style="height: 50%; width: 100%;"><p style="font-family: Sunshine ; font-size: 75px; margin-left: 30px;">Guard the best Royal Highness Princess!</p></div>
+      <div class="d7-1-2" style="height: 50%; width: 100%; text-align: center;"><img src="./img/miku头像.png" alt="" style="height: 250px; "></div>
+    </div>
+    <div class="d7-2" style="height: 100%; width: 50%;">
+      <div class="d7-2-1" style="height: 50%; width: 100%;">
+        <p style="font-family: Microsoft Yahei ; font-size: 75px; text-align: right; margin-right: 30px;">了解更多<br>Learn more</p>
+        
+      </div>
+      <div class="d7-2-2" style="height: 50%; width: 100%;">
+        <ul class="nav flex-column" style="float: right; list-style-type: none;font-size: 40px;">
+          <li class="nav-item" ><a class="nav-link active" href="https://baike.baidu.com/item/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5/8231955">百度百科</a></li>
+          <li class="nav-item" ><a class="nav-link active" href="https://mzh.moegirl.org.cn/%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5">萌娘百科</a></li>
+          <li class="nav-item" ><a class="nav-link active" href="https://www.bilibili.com/bangumi/play/ss36257?spm_id_from=333.337.0.0">演唱会</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
